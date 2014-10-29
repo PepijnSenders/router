@@ -1,0 +1,24 @@
+"api":
+  "optins.store":
+    before: "csrf"
+    uses: "Honor\\Controllers\\OptIn\\OptInsController@store"
+  "honor-world-registration.store":
+    before: "csrf"
+    uses: "Honor\\Controllers\\Products\\HonorWorldRegistrationsController@store"
+  "supports.store":
+    before: "csrf"
+    uses: "Honor\\Controllers\\Products\\SupportsController@store"
+  "socials":
+    "index":
+      before: "csrf"
+      uses: "Honor\\Controllers\\Products\\SocialsController@index"
+    "crawl":
+      before: "cron|facebook"
+      uses: "Honor\\Controllers\\Products\\SocialsController@crawl"
+"emails":
+  "optin":
+    params: "id"
+    uses: "Honor\\Controllers\\Support\\EmailsController@optin"
+"optin-dashboard":
+  "":
+

@@ -1,0 +1,26 @@
+{
+  "name": "pep/router",
+  "description": "Router package for Laravel",
+  "license": "MIT",
+  "version": "0.0.1",
+  "authors": [
+  {
+    "name": "Pepijn Senders",
+    "email": "p.senders92@gmail.com"
+  }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pep\\": "src/Pep"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.5",
+    "illuminate/support": "4.2.*",
+    "symfony/yaml": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.3.*"
+  }
+}
